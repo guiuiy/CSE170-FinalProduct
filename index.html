@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="order-number">
+                    ORDER #333
+                </div>
+                <div class="progress-bar">
+                    <div class="bar"> </div>
+                </div>
+            </div>
+            <div class="lists">
+
+                <div class="order-list">
+                    <div class="order-item">
+                        <div class="check-icon" onclick="checkBox(0)"></div>
+                        <div class="order-details">
+                            <p>#1 Big Burger Meal</p>
+                            <ul class="items">
+                                <li>Big Burger</li>
+                                <li>Large Fries</li>
+                                <li>Large Coke</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="check-icon" onclick="checkBox(1)"></div>
+                        <div class="order-details">
+                            <p>#5 Petite Burger Meal</p>
+                            <ul class="items">
+                                <li>Petite Burger</li>
+                                <li>Petite Fries</li>
+                                <li>Petite Coke</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="check-icon" onclick="checkBox(2)"></div>
+                        <div class="order-details">
+                            <p>#1 Mons. Hot Dog Meal</p>
+                            <ul class="items">
+                                <li>Mons. Hot Dog</li>
+                                <li>Mons. Fries</li>
+                                <li>Mons. Coke</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-list">
+                    <button class="action-btn next" onclick="next()">START ORDER →</button>
+                    <button class="action-btn back" onclick="back()">---</button>
+                    <button class="action-btn other">OTHER ⚙</button>
+                    <button class="action-btn cancel">CANCEL ORDER ✖</button>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="right-info-box right">
+                    CUSTOMER INFO: NAME, TIME ORDERED
+                </div>
+                <div class="left-info-box left">
+                    GENERAL INFO: CURRENT TIME, TIME ELAPSED
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
